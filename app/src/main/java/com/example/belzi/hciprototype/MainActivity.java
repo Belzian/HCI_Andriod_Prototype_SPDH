@@ -12,6 +12,8 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import static android.provider.AlarmClock.EXTRA_MESSAGE;
+
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
@@ -90,10 +92,14 @@ public class MainActivity extends AppCompatActivity
             startActivity(intent);
 
         } else if (id == R.id.nav_categories) {
-            //this takes to Health activity categories tab
+            Intent intent = new Intent(this, Health.class);
+            intent.putExtra(EXTRA_MESSAGE, 1);
+            this.startActivity(intent);
 
         } else if (id == R.id.nav_favourites) {
-            //this takes to Health activity favourites tab
+            Intent intent = new Intent(this, Health.class);
+            intent.putExtra(EXTRA_MESSAGE, 2);
+            this.startActivity(intent);
 
         } else if (id == R.id.nav_settings) {
             Intent intent = new Intent(this, Settings.class);

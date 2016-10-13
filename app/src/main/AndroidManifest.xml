@@ -21,7 +21,17 @@
         <activity android:name=".BloodTester" />
         <activity android:name=".Settings" />
         <activity android:name=".Feedback" />
-        <activity android:name=".Health"></activity>
+        <activity
+            android:name=".OverallTab"
+            android:label="@string/title_activity_tab1"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".CategoriesTab"
+            android:label="@string/title_activity_tab2"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Health" />
+        <activity android:name=".FavouritesTab" />
+        <activity android:name=".ListItemDetails"></activity>
     </application>
 
 </manifest>

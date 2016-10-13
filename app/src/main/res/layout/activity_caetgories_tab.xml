@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.belzi.hciprototype.Health">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/carbTolBtn"
+                        style="?android:attr/buttonBarButtonStyle"
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:background="@drawable/carbs"
+                        android:gravity="bottom|center"
+                        android:onClick="doThis"
+                        android:text="Carbohydrate Tolerance" />
+
+                    <ImageButton
+                        android:id="@+id/carbTolFav"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_alignRight="@id/carbTolBtn"
+                        android:layout_alignTop="@id/carbTolBtn"
+                        android:background="#00ffffff"
+                        android:src="@android:drawable/btn_star_big_off" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/cardVasBtn"
+                        style="?android:attr/buttonBarButtonStyle"
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:background="@drawable/heart_medical_diagram"
+                        android:gravity="bottom|center"
+                        android:onClick=""
+                        android:text="Cardiovascular" />
+
+                    <ImageButton
+                        android:id="@+id/cardVasFav"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_alignRight="@id/cardVasBtn"
+                        android:layout_alignTop="@id/cardVasBtn"
+                        android:background="#00ffffff"
+                        android:src="@android:drawable/btn_star_big_off" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/kidneyBtn"
+                        style="?android:attr/buttonBarButtonStyle"
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:background="@drawable/kidney"
+                        android:gravity="bottom|center"
+                        android:onClick=""
+                        android:text="Kidneys" />
+
+                    <ImageButton
+                        android:id="@+id/kidneyFav"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_alignRight="@id/kidneyBtn"
+                        android:layout_alignTop="@id/kidneyBtn"
+                        android:background="#00ffffff"
+                        android:src="@android:drawable/btn_star_big_off" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/liverBtn"
+                        style="?android:attr/buttonBarButtonStyle"
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:background="@drawable/liver"
+                        android:gravity="bottom|center"
+                        android:onClick=""
+                        android:text="Liver" />
+
+                    <ImageButton
+                        android:id="@+id/liverFav"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_alignRight="@id/liverBtn"
+                        android:layout_alignTop="@id/liverBtn"
+                        android:background="#00ffffff"
+                        android:src="@android:drawable/btn_star_big_off" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/proteinBtn"
+                        style="?android:attr/buttonBarButtonStyle"
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:background="@drawable/protein"
+                        android:gravity="bottom|center"
+                        android:onClick=""
+                        android:text="Protein" />
+
+                    <ImageButton
+                        android:id="@+id/proteinFav"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_alignRight="@id/proteinBtn"
+                        android:layout_alignTop="@id/proteinBtn"
+                        android:background="#00ffffff"
+                        android:src="@android:drawable/btn_star_big_on" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/redBloCelBtn"
+                        style="?android:attr/buttonBarButtonStyle"
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:background="@drawable/red_blood_cells"
+                        android:gravity="bottom|center"
+                        android:onClick=""
+                        android:text="Red Blood Cells" />
+
+                    <ImageButton
+                        android:id="@+id/redBloCelFav"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_alignRight="@id/redBloCelBtn"
+                        android:layout_alignTop="@id/redBloCelBtn"
+                        android:background="#00ffffff"
+                        android:src="@android:drawable/btn_star_big_off" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/reproBtn"
+                        style="?android:attr/buttonBarButtonStyle"
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:background="@drawable/reproductive"
+                        android:gravity="bottom|center"
+                        android:onClick=""
+                        android:text="Reproductive" />
+
+                    <ImageButton
+                        android:id="@+id/reproFav"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_alignRight="@id/reproBtn"
+                        android:layout_alignTop="@id/reproBtn"
+                        android:background="#00ffffff"
+                        android:src="@android:drawable/btn_star_big_on" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/thyroidBtn"
+                        style="?android:attr/buttonBarButtonStyle"
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:background="@drawable/thyroid"
+                        android:gravity="bottom|center"
+                        android:onClick=""
+                        android:text="Thyroid" />
+
+                    <ImageButton
+                        android:id="@+id/thyroidFav"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_alignRight="@id/thyroidBtn"
+                        android:layout_alignTop="@id/thyroidBtn"
+                        android:background="#00ffffff"
+                        android:src="@android:drawable/btn_star_big_off" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/vitaminBtn"
+                        style="?android:attr/buttonBarButtonStyle"
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:background="@drawable/vitamins"
+                        android:gravity="bottom|center"
+                        android:onClick=""
+                        android:text="Vitamins and Minerals" />
+
+                    <ImageButton
+                        android:id="@+id/vitaminFav"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_alignRight="@id/vitaminBtn"
+                        android:layout_alignTop="@id/vitaminBtn"
+                        android:background="#00ffffff"
+                        android:src="@android:drawable/btn_star_big_on" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/whiBloCelBtn"
+                        style="?android:attr/buttonBarButtonStyle"
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:background="@drawable/white_blood_cells"
+                        android:gravity="bottom|center"
+                        android:onClick=""
+                        android:text="White Blood Cells" />
+
+                    <ImageButton
+                        android:id="@+id/whiBloCelFav"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_alignRight="@id/whiBloCelBtn"
+                        android:layout_alignTop="@id/whiBloCelBtn"
+                        android:background="#00ffffff"
+                        android:src="@android:drawable/btn_star_big_off" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
