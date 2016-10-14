@@ -1,51 +1,35 @@
 package com.example.belzi.hciprototype;
 
 import android.content.Intent;
-import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
 
 import static android.provider.AlarmClock.EXTRA_MESSAGE;
 
-public class Health extends AppCompatActivity {
+public class CategoryDetail extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_health);
+        setContentView(R.layout.activity_category_detail);
 
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tab_layout);
-        tabLayout.addTab(tabLayout.newTab().setText("Overall"));
-        tabLayout.addTab(tabLayout.newTab().setText("Categories"));
-        tabLayout.addTab(tabLayout.newTab().setText("Favourites"));
+        tabLayout.addTab(tabLayout.newTab().setText("Values"));
+        tabLayout.addTab(tabLayout.newTab().setText("Bar Chart"));
+        tabLayout.addTab(tabLayout.newTab().setText("Line Chart"));
         tabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
 
         final ViewPager viewPager = (ViewPager) findViewById(R.id.pager);
 
-        final HealthPagerAdapter adapter = new HealthPagerAdapter
+        final CategoryPagerAdapter adapter = new CategoryPagerAdapter
                 (getSupportFragmentManager(), tabLayout.getTabCount());
 
 
         viewPager.setAdapter(adapter);
-
-        Intent intent = getIntent();
-        int tab = intent.getIntExtra(EXTRA_MESSAGE, 0);
-
-        switch (tab){
-            case 0:
-                viewPager.setCurrentItem(0);
-                break;
-            case 1:
-                viewPager.setCurrentItem(1);
-                break;
-            case 2:
-                viewPager.setCurrentItem(2);
-                break;
-        }
 
         viewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
         tabLayout.setOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
@@ -75,26 +59,11 @@ public class Health extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
-        switch(id) {
-            case R.id.action_settings:
-                Intent intent = new Intent(this, Settings.class);
-                this.startActivity(intent);
-                break;
-            default:
-                return super.onOptionsItemSelected(item);
+        if (id == R.id.action_settings) {
+            return true;
         }
+
         return super.onOptionsItemSelected(item);
     }
 
-    public void viewDetail(View view){
-        Intent intent = new Intent(this, CategoryDetail.class);
-        intent.putExtra(EXTRA_MESSAGE, view.getId());
-        this.startActivity(intent);
-    }
-
 }
-
-
-
-
-

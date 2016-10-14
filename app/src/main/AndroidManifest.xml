@@ -31,7 +31,15 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".Health" />
         <activity android:name=".FavouritesTab" />
-        <activity android:name=".ListItemDetails"></activity>
+        <activity android:name=".ListItemDetails" />
+        <activity android:name=".CategoryDetail" />
+        <activity android:name=".ValuesTab" />
+        <activity android:name=".CategoryPagerAdapter" />
+        <activity android:name=".BarChartTab" />
+        <activity android:name=".LineChartTab" />
+        <activity android:name=".SampleHistory" />
+        <activity android:name=".EditAccount" />
+        <activity android:name=".CustomiseCategories"></activity>
     </application>
 
 </manifest>

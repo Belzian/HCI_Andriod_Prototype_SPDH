@@ -10,7 +10,7 @@ public class CategoriesTab extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.activity_caetgories_tab, container, false);
+        return inflater.inflate(R.layout.activity_categories_tab, container, false);
     }
 
 }

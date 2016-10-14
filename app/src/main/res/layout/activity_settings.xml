@@ -9,12 +9,52 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.belzi.hciprototype.Settings">
 
+    <Button
+        android:text="Customise Categories"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/EditAccountTV"
+        android:id="@+id/cusCatBtn"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="startCustomiseCategories"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cusCatBtn"
+        android:id="@+id/ediAccBtn"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:text="Edit Account"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="startEditAccount"/>
+
+    <Button
+        android:text="Pair Device"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ediAccBtn"
+        android:layout_alignLeft="@+id/ediAccBtn"
+        android:layout_alignStart="@+id/ediAccBtn"
+        android:id="@+id/paiDevBtn"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="pairDevice" />
+
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Settings"
-        android:id="@+id/textView5"
+        android:id="@+id/EditAccountTV"
+        android:background="?attr/colorPrimary"
+        android:textColor="@android:color/white"
+        android:textAlignment="center"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 </RelativeLayout>

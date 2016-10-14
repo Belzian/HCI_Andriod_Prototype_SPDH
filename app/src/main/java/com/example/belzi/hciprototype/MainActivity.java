@@ -115,6 +115,11 @@ public class MainActivity extends AppCompatActivity
         return true;
     }
 
+    public void startSampleHistory(View view){
+        Intent intent = new Intent(this, SampleHistory.class);
+        startActivity(intent);
+    }
+
 
     public void startBloodSample(View view) {
         Intent intent = new Intent(this, BloodTester.class);

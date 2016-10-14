@@ -38,7 +38,7 @@
                         android:layout_gravity="center_vertical|center_horizontal"
                         android:background="@drawable/protein"
                         android:gravity="bottom|center"
-                        android:onClick=""
+                        android:onClick="viewDetail"
                         android:text="Protein" />
 
                     <ImageButton
@@ -63,7 +63,7 @@
                         android:layout_gravity="center_vertical|center_horizontal"
                         android:background="@drawable/reproductive"
                         android:gravity="bottom|center"
-                        android:onClick=""
+                        android:onClick="viewDetail"
                         android:text="Reproductive" />
 
                     <ImageButton
@@ -95,7 +95,7 @@
                         android:layout_gravity="center_vertical|center_horizontal"
                         android:background="@drawable/vitamins"
                         android:gravity="bottom|center"
-                        android:onClick=""
+                        android:onClick="viewDetail"
                         android:text="Vitamins and Minerals" />
 
                     <ImageButton
