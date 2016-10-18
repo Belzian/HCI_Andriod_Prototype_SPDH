@@ -21,4 +21,106 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/EditAccountTV"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <CheckBox
+                android:text="Carbohydrate Tolerance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/checkBox"
+                android:buttonTint="@color/colorPrimary"
+                android:checked="true"/>
+
+            <CheckBox
+                android:text="Cardiovascular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/checkBox2"
+                android:buttonTint="@color/colorPrimary"
+                android:checked="true"/>
+
+            <CheckBox
+                android:text="Kidneys"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/checkBox3"
+                android:buttonTint="@color/colorPrimary"
+                android:checked="true"/>
+
+            <CheckBox
+                android:text="Liver"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/checkBox4"
+                android:buttonTint="@color/colorPrimary"
+                android:checked="true"/>
+
+            <CheckBox
+                android:text="Protein"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/checkBox5"
+                android:buttonTint="@color/colorPrimary"
+                android:checked="true"/>
+
+            <CheckBox
+                android:text="Red Blood Cells"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/checkBox6"
+                android:buttonTint="@color/colorPrimary"
+                android:checked="true"/>
+
+            <CheckBox
+                android:text="Reproductive"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/checkBox7"
+                android:buttonTint="@color/colorPrimary"
+                android:checked="true"/>
+
+            <CheckBox
+                android:text="Thyroid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/checkBox8"
+                android:buttonTint="@color/colorPrimary"
+                android:checked="true" />
+
+            <CheckBox
+                android:text="Vitamins and Minerals"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/checkBox9"
+                android:buttonTint="@color/colorPrimary"
+                android:checked="true" />
+
+            <CheckBox
+                android:text="White Blood Cells"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/checkBox10"
+                android:buttonTint="@color/colorPrimary"
+                android:checked="true"/>
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinner"
+                android:layout_marginTop="30dp"
+                android:backgroundTint="@color/colorPrimary"/>
+
+        </LinearLayout>
+    </ScrollView>
 </RelativeLayout>

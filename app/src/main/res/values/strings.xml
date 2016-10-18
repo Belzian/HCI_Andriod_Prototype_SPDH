@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">HCI Prototype</string>
+    <string name="app_name">Blood Tester</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -69,4 +69,12 @@
     <string name="title_activity_tab_controller">TabController</string>
     <string name="title_activity_tab1">TabActivity1</string>
     <string name="title_activity_tab2">TabActivity2</string>
+
+    <string-array name="sort_by">
+        <item>Sort by: Name A-Z</item>
+        <item>Sort by: Name Z-A</item>
+        <item>Sort by: Most used</item>
+        <item>Sort by: Most recent</item>
+    </string-array>
+
 </resources>

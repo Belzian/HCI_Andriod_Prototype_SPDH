@@ -39,7 +39,8 @@
         <activity android:name=".LineChartTab" />
         <activity android:name=".SampleHistory" />
         <activity android:name=".EditAccount" />
-        <activity android:name=".CustomiseCategories"></activity>
+        <activity android:name=".CustomiseCategories" />
+        <activity android:name=".ValueInformation"></activity>
     </application>
 
 </manifest>
