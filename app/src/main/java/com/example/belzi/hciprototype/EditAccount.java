@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 
-public class EditAccount extends AppCompatActivity {
+public class EditAccount extends DrawerActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -13,7 +13,7 @@ import android.widget.Toast;
 import java.util.Timer;
 import java.util.TimerTask;
 
-public class Settings extends AppCompatActivity {
+public class Settings extends DrawerActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

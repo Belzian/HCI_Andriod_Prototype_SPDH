@@ -10,7 +10,7 @@ import android.app.ProgressDialog;
 import java.util.Timer;
 import java.util.TimerTask;
 
-public class BloodTester extends AppCompatActivity {
+public class BloodTester extends DrawerActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

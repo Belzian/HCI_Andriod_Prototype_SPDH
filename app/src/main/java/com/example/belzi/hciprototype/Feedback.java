@@ -11,7 +11,7 @@ import android.widget.TextView;
 import java.util.Timer;
 import java.util.TimerTask;
 
-public class Feedback extends AppCompatActivity {
+public class Feedback extends DrawerActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

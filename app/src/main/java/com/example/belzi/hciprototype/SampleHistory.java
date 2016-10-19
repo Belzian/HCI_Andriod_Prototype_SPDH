@@ -9,7 +9,7 @@ import android.widget.TextView;
 import java.util.ArrayList;
 import java.util.List;
 
-public class SampleHistory extends AppCompatActivity {
+public class SampleHistory extends DrawerActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

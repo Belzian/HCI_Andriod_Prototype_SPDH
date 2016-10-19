@@ -7,7 +7,7 @@ import android.widget.TextView;
 
 import static android.provider.AlarmClock.EXTRA_MESSAGE;
 
-public class ValueInformation extends AppCompatActivity {
+public class ValueInformation extends DrawerActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

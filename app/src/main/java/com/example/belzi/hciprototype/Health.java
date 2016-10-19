@@ -11,7 +11,7 @@ import android.view.View;
 
 import static android.provider.AlarmClock.EXTRA_MESSAGE;
 
-public class Health extends AppCompatActivity {
+public class Health extends DrawerActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

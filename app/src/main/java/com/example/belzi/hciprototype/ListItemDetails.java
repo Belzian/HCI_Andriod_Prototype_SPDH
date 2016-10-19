@@ -9,7 +9,7 @@ import java.util.ArrayList;
 
 import static android.provider.AlarmClock.EXTRA_MESSAGE;
 
-public class ListItemDetails extends AppCompatActivity {
+public class ListItemDetails extends DrawerActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -10,7 +10,7 @@ import android.view.MenuItem;
 
 import static android.provider.AlarmClock.EXTRA_MESSAGE;
 
-public class CategoryDetail extends AppCompatActivity {
+public class CategoryDetail extends DrawerActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
