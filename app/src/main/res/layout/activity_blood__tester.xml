@@ -28,7 +28,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="1. Step 1 text \n2. Step 2 text \n3. Step 3 text \n4. Step 4 text \n "
+        android:text="1. Place needle cartridge in sampling device \n2. Place finger where indicated on sampling device \n3. Press \'Begin Sampling\'\n "
         android:id="@+id/bloodTextView"
         android:layout_below="@+id/textView4"
         android:layout_alignParentLeft="true"
