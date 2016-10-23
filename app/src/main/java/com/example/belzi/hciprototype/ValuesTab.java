@@ -193,7 +193,16 @@ public class ValuesTab extends Fragment {
                 } else if (entry.contains("IgA component")) {
                     message = entry + "#Information#higher#lower";
                 } else if (entry.contains("Total protein")) {
-                    message = entry + "#Information#higher#lower";
+                    message = entry + "#Proteins are important building blocks of all cells and tissues. Proteins are necessary for your body’s growth, development, and health. Blood contains albumin and globulin. Albumin proteins keep fluid from leaking out of your blood vessels. Globulin proteins play an important role in your immune system.#Inflammation or infections, such as viral hepatitis B or C, or HIV\n" +
+                            "Bone marrow disorders, such as multiple myeloma or Waldenstrom’s disease#Bleeding\n" +
+                            "Liver disorder\n" +
+                            "Kidney disorder, such as a nephrotic disorder or glomerulonephritis\n" +
+                            "Malnutrition\n" +
+                            "Malabsorption conditions, such as celiac disease or inflammatory bowel disease\n" +
+                            "Extensive burns\n" +
+                            "Agammaglobulinemia, which is an inherited condition in which your blood doesn’t have enough of a type of globulin, affecting the strength of your immune system\n" +
+                            "Inflammatory conditions\n" +
+                            "Delayed post-surgery recovery";
                 } else if (entry.contains("Albumin to Globulin Ratio")) {
                     message = entry + "#These are proteins made in the liver and released into the blood. They are useful for evaluating overall health and nutrition status. Globulin fights disease. Albumin makes up about 2/3 of the total protein in the body and keeps water inside blood vessels.#Albumin: Dehydration.Globulin: Severe liver disease, infectious disease, blood disease, autoimmune disease, tuberculosis, multiple myelomas.#Albumin: Malnutrition, overhydration, liver disease, kidney disease, bone fractures, severe injury, inflammation, infection, Crohn’s disease, heart failure, thyroid dysfunction, slow bleeding, pregnancy, bed rest, certain medications.Globulin: Malnutrition, overhydration.";
                 }
